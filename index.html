@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Minijuego</title>
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/@picocss/pico@1.5.7/css/pico.classless.min.css"
+    />
+<!-- CSS -->
+    <link rel="stylesheet" href="./css/style.css">
+<!-- BOOTSTRAP -->
+    <link 
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" 
+      rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" 
+      crossorigin="anonymous">
+  </head>
+
+  <body>
+    <header class="container-fluid">
+      <h1>¡Bienvenido!</h1>
+    </header>
+    <main class="container-fluid">
+
+      <div class="container">
+
+        <div class="row">
+          <p>¡Bienvenido al juego de creación de rol interactivo, miniatura!</p>
+
+            <ul>
+              <div class="col-sm-6 col-xl-6">
+                <li>
+                  <button data-key="1" class="button-56" role="button">
+                    <kbd>Shift + 1</kbd> Ingresar el nombre del personaje
+                  </button>
+                </li>
+              </div>
+
+              <div class="col-sm-6 col-xl-6">
+                <li>
+                  <button data-key="2" class="button-56" role="button">
+                    <kbd>Shift + 2</kbd>Revisar el nombre ingresado
+                  </button>
+                </li>
+              </div>
+
+              <div class="col-sm-6 col-xl-6">
+                <li>
+                  <button data-key="3" class="button-56" role="button">
+                    <kbd>Shift + 3</kbd> Elegir un rol
+                  </button>
+                </li>
+              </div>
+
+              <div class="col-sm-6 col-xl-6">
+                <li>
+                  <button data-key="4" class="button-56" role="button">
+                    <kbd>Shift + 4</kbd> Mostrar personaje
+                  </button>
+                </li>
+              </div>
+
+              <div class="col-sm-6 col-xl-6">
+                <li>
+                  <button data-key="5" class="button-56" role="button">
+                    <kbd>Shift + 5</kbd> Mochila
+                  </button>
+                </li>
+              </div>
+
+              <div class="col-sm-6 col-xl-6">
+                <li>
+                  <button data-key="6" class="button-56" role="button">
+                    <kbd>Shift + 6</kbd> Revisar Mochila
+                  </button>
+                </li>
+              </div>
+            </ul>
+        </div>
+      </div>
+    </main>
+
+    <dialog id="ingresar-nombre">
+      <form>
+        <label for="nombre">Ingresa tu nombre</label>
+        <input type="text" id="nombre" />
+        <button type="submit">Enviar</button>
+      </form>
+    </dialog>
+
+    <dialog id="revisar-nombre">
+      <h2>El nombre de tu personaje es:</h2>
+      <p></p>
+      <button type="button">Ok</button>
+    </dialog>
+
+    <dialog id="elegir-rol">
+      <form>
+        <label for="rol">Elige el rol</label>
+        <select name="rol" id="rol">
+          <option value="mago">Mago</option>
+          <option value="ninja">Ninja</option>
+          <option value="espadachin">Espadachin</option>
+        </select>
+        <button type="submit">Ok</button>
+      </form>
+    </dialog>
+
+    <dialog id="ingresar-items">
+      <form>
+        <label for="item">Ingresa un nuevo item a la mochila</label>
+        <input type="text" id="item" />
+        <button type="submit">Enviar</button>
+      </form>
+    </dialog>
+
+    <dialog id="revisar-items">
+      <template>
+        <li>
+          <p>
+            item 1
+          </p>
+          <button type="button">Borrar</button>
+        </li>
+      </template>
+      <h2>Estos son los objetos que llevas:</h2>
+      <ul>
+      </ul>
+      <button type="button">Ok</button>
+    </dialog>
+
+  <footer class="container-fluid">
+    <p>©Carolina Mariscal - 2023 || Proyecto JavaScript</p>
+  </footer>
+<!-- MI JS -->
+    <script type="module" src="./javascript/script.js"></script>
+<!-- BOOTSTRAP JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+  </body>
+</html>
