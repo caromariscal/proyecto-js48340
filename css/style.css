@@ -61,21 +61,30 @@
 }
 header h1 {
   font-family: pixels;
-  padding-top: 5px;
+  padding: 50px 0px 20px 0px;
   text-align: center;
 }
 
 footer {
   font-family: pixels;
-  margin-top: 0px;
+  margin-top: 160px;
   color: white;
   text-align: center;
 }
 
+main {
+  margin: 100px 150px 10px 150px;
+  padding: 10px 0px 10px 0px;
+}
+main p {
+  color: black;
+  font-family: pixels;
+}
+
 body {
   background-image: url(../img/background-image.webp);
+  background-repeat: no-repeat;
   font-family: pixels;
-  min-height: 100%;
 }
 body li {
   list-style: none;
