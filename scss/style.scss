@@ -1,8 +1,9 @@
-@import "fonts", "buttons", "header", "footer";
+@import "fonts", "buttons", "header", "footer", "main";
 
 body {
     background-image: url(../img/background-image.webp);
     font-family: pixels;
+    min-height: 100%;
 
     li {
         list-style: none;
