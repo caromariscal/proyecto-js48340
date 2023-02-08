@@ -14,7 +14,7 @@ revisarItems('[data-key="6"]');
 
 
 document.addEventListener('keydown', (e) => {
-    if(/^Digit[1-6]|Escape/g.test(e.code)){
+    if(/^Digit[1-6]/g.test(e.code)){
         const key = e.code.replace('Digit', '');
         const action = document.querySelector(`[data-key="${key}"]`);
         if(action){
