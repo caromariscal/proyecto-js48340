@@ -79,7 +79,7 @@
                 <div class="col-sm-6">
                   <li>
                     <button data-key="7" class="button-56" role="button">
-                      <div><kbd>Shift + 7</kbd> Galleta de la fortuna</div>
+                      <div><kbd>Shift + 7</kbd> Items</div>
                     </button>
                   </li>
                 </div>
@@ -121,7 +121,11 @@
     </dialog>
 
     <dialog id="mostrar-personaje">
-      
+      <h2>Lista de Items:</h2>
+      <div id="personajegif">
+
+      </div>
+      <button type="button">Ok</button>
     </dialog>
 
     <dialog id="ingresar-items">
@@ -147,11 +151,29 @@
       <button type="button">Ok</button>
     </dialog>
 
-    <dialog id="galleta-fortuna">
-      <h2>Esta es tu fortuna:</h2>
-      <p></p>
+    <dialog id="traer-objetos">
+      <template>
+        <li>
+          <p>
+            item 1
+          </p>
+          <button type="button">Borrar</button>
+        </li>
+      </template>
+      <h2>Estos son todos los objetos:</h2>
+      <ul>
+      </ul>
       <button type="button">Ok</button>
     </dialog>
+    
+    <dialog id="items-rpg">
+      <h2>Lista de Items:</h2>
+      <p id="rpgItemList">
+
+      </p>
+      <button type="button">Ok</button>
+    </dialog>
+
 
   <footer class="container-fluid">
     <p>©Carolina Mariscal - 2023 || Proyecto JavaScript</p>

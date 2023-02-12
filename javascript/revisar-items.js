@@ -28,9 +28,7 @@ function mostrarItems () {
 }
 
 export const register = (path) => {
-    console.log(path)
     const el = document.querySelector(path);
-    console.log(el)
     el.addEventListener('click', () => {
         console.log('click')
         mostrarItems();
