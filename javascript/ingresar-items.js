@@ -1,12 +1,12 @@
 import { updateStore, getStore } from './store.js';
 
 
-const dialog = document.getElementById('ingresar-items');
-const form = dialog.querySelector('form');
+const dialogo = document.getElementById('ingresar-items');
+const form = dialogo.querySelector('form');
 
 
 const ingresarItems = () => {
-    dialog.show();
+    dialogo.show();
 };
 
 form.addEventListener('submit', (e) => {
@@ -16,7 +16,7 @@ form.addEventListener('submit', (e) => {
     const store = getStore();
     const items = store.items.length < 2 ? [...store.items, item]:store.items;
     updateStore((store) => ({...store, items }));
-    dialog.close();
+    dialogo.close();
     input.value = "";
 });
 

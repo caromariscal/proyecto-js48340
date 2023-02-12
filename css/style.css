@@ -75,9 +75,15 @@ footer {
 main {
   margin: 100px 150px 10px 150px;
   padding: 10px 0px 10px 0px;
+  font-family: pixels;
 }
 main p {
   color: black;
+}
+
+dialog.show {
+  display: flex;
+  flex-direction: column;
   font-family: pixels;
 }
 

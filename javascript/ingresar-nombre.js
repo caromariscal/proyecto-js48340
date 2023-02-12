@@ -1,11 +1,11 @@
 import { updateStore } from './store.js';
 
-const dialog = document.getElementById('ingresar-nombre');
-const form = dialog.querySelector('form');
+const dialogo = document.getElementById('ingresar-nombre');
+const form = dialogo.querySelector('form');
 
 
 const ingresarNombre = () => {
-    dialog.show();
+    dialogo.show();
 };
 
 form.addEventListener('submit', (e) => {
@@ -13,7 +13,7 @@ form.addEventListener('submit', (e) => {
     const input = form.querySelector('input')
     const name = input.value;
     updateStore((store) => ({...store, name }));
-    dialog.close();
+    dialogo.close();
     input.value = "";
 });
 

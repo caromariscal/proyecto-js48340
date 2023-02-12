@@ -1,5 +1,4 @@
 const dialogo = document.getElementById('items-rpg')
-const parrafo = dialogo.querySelector('p')
 const listahtml = document.getElementById('rpgItemList')
 const boton = dialogo.querySelector('button')
 

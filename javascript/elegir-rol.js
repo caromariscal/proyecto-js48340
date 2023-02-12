@@ -1,18 +1,18 @@
 import { updateStore } from './store.js';
 
-const dialog = document.getElementById('elegir-rol');
-const form = dialog.querySelector('form');
+const dialogo = document.getElementById('elegir-rol');
+const form = dialogo.querySelector('form');
 
 
 const elegirRol = () => {
-    dialog.show();
+    dialogo.show();
 };
 
 form.addEventListener('submit', (e) => {
     e.preventDefault();
     const role = form.querySelector('select').value;
     updateStore((store) => ({...store, role }));
-    dialog.close();
+    dialogo.close();
 });
 
 export const register = (path) => {
