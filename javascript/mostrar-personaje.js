@@ -19,7 +19,7 @@ function obtenerGif(){
         case 'ninja':
             gif = "./img/ninja.webp";
         break;
-        case 'espadachin':
+        case 'guerrero':
             gif = "./img/warrior.webp";
         break;
     }
