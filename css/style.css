@@ -85,6 +85,7 @@ body {
   background-image: url(../img/background-image.webp);
   background-repeat: no-repeat;
   font-family: pixels;
+  background-size: cover;
 }
 body li {
   list-style: none;
