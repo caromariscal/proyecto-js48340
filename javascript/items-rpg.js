@@ -1,3 +1,6 @@
+/* La api utilizada no es relevante en el proyecto, pero muestra items de un juego RPG (Role Play Game) normal por si el usuario no se le ocurre que llevar en su mochila */
+
+
 const dialogo = document.getElementById('items-rpg')
 const listahtml = document.getElementById('rpgItemList')
 const boton = dialogo.querySelector('button')
